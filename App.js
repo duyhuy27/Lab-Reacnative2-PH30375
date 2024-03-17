@@ -8,6 +8,14 @@ import Bai2 from "./lab/lab1/bai2";
 import Bai3Lab1 from "./lab/lab1/bai3";
 import HomeLab2 from "./lab/lab2";
 import Lab2Bai1 from "./lab/lab2/bai1";
+import Lab3Home from "./lab/lab3";
+import Lab3Bai1 from "./lab/lab3/bai1";
+import Bai3Lab3 from "./lab/lab3/bai3";
+import Bai2Lab3 from "./lab/lab3/bai2";
+import Bai2L3 from "./lab/lab3/bai2/app";
+import Bai3L3 from "./lab/lab3/bai3";
+import ScrollViewScreen from "./lab/lab3/bai2/app";
+import Lab3Bai2 from "./lab/lab3/bai2/app";
 
 const Stack = createNativeStackNavigator();
 
@@ -32,7 +40,7 @@ const App = () => {
         />
         <Stack.Screen
           name="Lab3"
-          component={Lab3Screen}
+          component={Lab3Home}
           options={{ title: "Lab 3" }}
         />
         <Stack.Screen
@@ -54,6 +62,21 @@ const App = () => {
           name="bai1lab2"
           component={Lab2Bai1}
           options={{ title: "Bài 2 Lab 2" }}
+        />
+        <Stack.Screen
+          name="bai1lab3"
+          component={Lab3Bai1}
+          options={{ title: "Bài 1 Lab 3" }}
+        />
+        <Stack.Screen
+          name="bai2lab3"
+          component={Lab3Bai2}
+          options={{ title: "Bài 2 Lab 3" }}
+        />
+        <Stack.Screen
+          name="bai3lab3"
+          component={Bai3L3}
+          options={{ title: "Bài 3 Lab 3" }}
         />
         {/* Thêm các màn hình cho các lab khác tại đây */}
       </Stack.Navigator>
@@ -83,14 +106,6 @@ const MenuScreen = ({ navigation }) => {
         <Text style={styles.menuText}>Lab 3</Text>
       </TouchableOpacity>
       {/* Thêm các mục menu cho các lab khác tại đây */}
-    </View>
-  );
-};
-
-const Lab3Screen = () => {
-  return (
-    <View style={styles.labScreenContainer}>
-      <Text style={styles.screenText}>Lab 3 Screen</Text>
     </View>
   );
 };
