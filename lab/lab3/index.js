@@ -4,7 +4,7 @@ import React from "react";
 const Lab3Home = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Lab 2 Screen</Text>
+      <Text style={styles.title}>Lab 3 Screen</Text>
       <View style={styles.menuContainer}>
         <TouchableOpacity
           style={styles.menuItem}
